@@ -1,0 +1,27 @@
+:root { color-scheme: light; --paper:#f6f0e4; --sheet:#fffcf5; --ink:#332f2a; --muted:#716b62; --sage:#586857; --line:#d8d0c2; }
+* { box-sizing:border-box; }
+html { background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+body { margin:0; }
+a { color:var(--sage); text-underline-offset:3px; }
+.page { width:min(820px,calc(100% - 40px)); margin:0 auto; padding:30px 0 60px; }
+.brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.03em; }
+.brand-mark { display:grid; place-items:center; width:34px; height:34px; border:1px solid var(--ink); border-radius:9px; font-family:Georgia,serif; color:var(--sage); }
+.hero { padding:110px 0 70px; }
+.eyebrow { margin:0 0 10px; color:var(--sage); font-size:.8rem; font-weight:750; letter-spacing:.12em; text-transform:uppercase; }
+h1 { margin:0; font-family:Georgia,serif; font-size:clamp(3rem,9vw,5.8rem); line-height:1.02; font-weight:600; }
+h2 { margin:.1em 0 .4em; font-family:Georgia,serif; font-size:2rem; }
+h3 { margin:2.2em 0 .4em; font-size:1.15rem; }
+.lead { max-width:600px; margin:28px 0 0; color:var(--muted); font-size:1.15rem; }
+.app-card,.document { background:var(--sheet); border:1px solid var(--line); border-radius:24px; padding:28px; }
+.app-card { display:grid; grid-template-columns:120px 1fr; gap:28px; align-items:center; }
+.app-card p { margin:.2em 0 1em; color:var(--muted); }
+nav { display:flex; gap:20px; }
+.nine-mark { width:120px; aspect-ratio:1; display:grid; place-items:center; border:2px solid var(--ink); background:linear-gradient(to right,transparent 32%,var(--line) 33%,transparent 34%,transparent 65%,var(--line) 66%,transparent 67%),linear-gradient(to bottom,transparent 32%,var(--line) 33%,transparent 34%,transparent 65%,var(--line) 66%,transparent 67%); }
+.nine-mark span { font:700 68px Georgia,serif; color:var(--sage); }
+.document { margin-top:52px; }
+.document h1 { font-size:clamp(2.2rem,7vw,3.8rem); }
+.document .updated { color:var(--muted); }
+.document ul { padding-left:1.25em; }
+.notice { margin:24px 0; padding:16px 18px; background:var(--paper); border-left:4px solid var(--sage); border-radius:4px 12px 12px 4px; }
+footer { margin-top:55px; color:var(--muted); font-size:.9rem; }
+@media (max-width:600px) { .hero{padding:75px 0 50px}.app-card{grid-template-columns:1fr}.nine-mark{width:92px}.document{padding:22px} }
